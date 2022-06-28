@@ -8,5 +8,97 @@
 </head>
 <body>
     
+
+<canvas id="dibujo" width="600" height="100"></canvas>
+
+<script type="application/javascript">
+    var canvas = document.getElementById('dibujo');
+    var ctx = canvas.getContext('2d');
+
+    window.onload = function() {
+        var canvas = document.getElementById("canvas");
+        if (canvas.getContext) {
+            var ctx = canvas.getContext("2d");
+            var ctx1 = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(60,70,50,0,(Math.PI/180)*360,true);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "#006400";
+            ctx.closePath();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(60,85,19,Math.PI,(2*Math.PI/180)  ,true);
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "#006400";
+            ctx.closePath();
+            ctx.stroke();
+            
+            ctx1.beginPath();
+            ctx1.arc(50,60,5,0,2*Math.PI/180,true);
+            ctx1.lineWidth = 5;
+            ctx1.strokeStyle = "#006400";
+            ctx1.lineWidth = 5;
+            ctx1.strokeStyle = "#006400";
+            ctx1.closePath();
+            ctx1.stroke();
+            ctx1.beginPath();
+
+            ctx1.arc(70,60,5,0,2*Math.PI/180,true);
+            ctx1.lineWidth = 5;
+            ctx1.strokeStyle = "#006400";
+            ctx1.lineWidth = 5;
+            ctx1.strokeStyle = "#006400";
+            ctx1.closePath();
+            ctx1.stroke();
+
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.lineCap = "butt"
+            ctx.moveTo(60,120 );
+            ctx.lineTo(60,220);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.lineCap = "butt"
+            ctx.moveTo(5  ,140 );
+            ctx.lineTo(120,140);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.lineCap = "butt"
+            ctx.moveTo(60  ,220 );
+            ctx.lineTo(120,280);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.lineCap = "butt"
+            ctx.moveTo(60  ,220 );
+            ctx.lineTo(0,280);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.lineCap = "butt"
+            ctx.moveTo(120  ,140 );
+            ctx.lineTo(140    ,100  );
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.lineWidth = 5;
+            ctx.lineCap = "butt"
+            ctx.moveTo(0 ,100 );
+            ctx.lineTo(9,140  );
+            ctx.stroke();
+
+
+
+        }
+      };
+</script>
+<canvas id="canvas" width="600" height="600"></canvas>
 </body>
 </html>
